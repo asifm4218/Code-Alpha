@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="C:\code alpha\New folder\image1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="C:\code alpha\New folder\image2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="C:\code alpha\New folder\image3.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="C:\code alpha\New folder\image4.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="C:\code alpha\New folder\image5.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="C:\code alpha\New folder\image6.jpg" alt="Image 4">
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <div class="nav-buttons">
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="js1.js"></script>
+</body>
+</html>
